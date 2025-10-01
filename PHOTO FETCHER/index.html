@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Photo Fetcher</title>
+  </head>
+  <body>
+    <div style="margin-left: -500px; margin-top: 50px">
+      <h1><b>Photo Fetcher</b></h1>
+    </div>
+    <div id="toggle-container" style="margin-top: 20px;">
+      <label for="grayscaleToggle" class="switch">
+        <input type="checkbox" id="grayscaleToggle" onchange="toggleGrayscale()" />
+        <span class="slider"></span>
+      </label>
+      <span><b>Makes Photos Grayscale</b></span>
+    </div>
+    <button onclick="fetchImages()">Fetch New Photos</button>
+    <div id="photos"></div>
+    <button id="wideButton" onclick="addMorePhotos()">More Photos</button>
+    <script src="script.js"></script>
+  </body>
+</html>
